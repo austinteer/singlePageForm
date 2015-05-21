@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>single page form</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="container-fluid bg-brand-grey">
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Got Something Upworthy?</h1>
+          <p class="lead">What’s the best thing you’ve seen all week? Anything that we missed? We’d love to know what you think should be featured on Upworthy.</p>
+        </div>
+    </div>
+  </div>
+  <div class="container-small">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="form-intro">Use the form below to submit your favorite stuff to us for consideration. Thanks in advance for your input!</p>
+          <form id="userSubmitContentForm" action="thanks.html">
+            <div class="form-group">
+              <label for="userSubmittedEmail">Email address <small>(required)</small></label>
+              <input type="email" class="form-control" name="email" id="userSubmittedEmail" placeholder="Enter email" aria-required="true" required>
+            </div>
+            <div class="form-group">
+              <label for="userSubmittedLink">Content Link <small>(required)</small></label>
+              <input type="url" class="form-control" id="userSubmittedLink" name="url" placeholder="Paste url here!" aria-required="true" required>
+            </div>
+            <p>Where did you first see the content?</p>
+            <div class="radio">
+              <label><input type="radio" name="facebook">Facebook</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="twitter">Twitter</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="youtube">Youtube</label>
+            </div>
+             <div class="radio">
+              <label><input type="radio" name="reddit">Reddit</label>
+            </div>
+             <div class="radio">
+              <label><input type="radio" name="iMadeItMyself">I made it myself</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="other">Other <input type="text" name="otherReason" /></label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
